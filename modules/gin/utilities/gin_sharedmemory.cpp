@@ -150,7 +150,12 @@ void* SharedMemory::getData()
     return impl->data;
 }
 
-int SharedMemory::getSize()
+void *SharedMemory::getData() const
+{
+    return impl->data;
+}
+
+int SharedMemory::getSize() const
 {
     return impl->size;
 }

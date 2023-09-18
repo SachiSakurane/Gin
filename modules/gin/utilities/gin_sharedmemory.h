@@ -27,7 +27,8 @@ public:
     static void remove (const juce::String& name);
 
     void* getData();
-    int getSize();
+    void *getData() const;
+    int getSize() const;
 
 private:
     class Impl;
